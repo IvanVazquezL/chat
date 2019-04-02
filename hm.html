@@ -1,0 +1,72 @@
+
+<html>
+<head>
+    <meta http-equiv="X-Frame-Options" content="ALLOW_FROM https://experimentatec.instructure.com'">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-indigo.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,700,700i" rel="stylesheet">
+    <script src="js/chatbot.js"></script>
+    <script src="js/lightslider.js"></script>
+    <link rel="stylesheet" href="css/chatbot.css" type="text/css">
+    <link rel="stylesheet" href="css/lightslider.css" type="text/css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/chatbot.css" type="text/css">
+    <script>
+    function loadFunction() {
+        jQuery(function(){
+           jQuery('#btn').click();
+        });
+    };
+    </script>
+
+</head>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header ">
+      <header class="android-header mdl-layout__header mdl-layout__header--waterfall">
+         <div style="padding-left:24px;  padding-top:12px; padding-bottom:12px;">
+            <img src="https://mostla.tec.mx/images/logo.png" srcset="https://mostla.tec.mx/images/logo.png 2x, https://mostla.tec.mx/images/logo.png 1x">
+        </div>
+        <div style="padding-left:96px; padding-top:3px; position:absolute;">
+            <h3  style="font-family: 'Montserrat', sans-serif;  font-size: 22px;font-weight:500;" class="mdl-layout-title">Asistente Virtual</h3>
+            <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+  </div>
+
+
+<body  onload="loadFunction()" style=" font-size: 18px; width:100%; ">
+
+<div class="container-fluid" id="chat-text" style="background-color: #F1F1F1; font-family: 'Open Sans', sans-serif; position: fixed; width: 100%; display:block; overflow-y: scroll; top:60px; bottom:65px;">
+    <!--ALL RESPONSES ARE DISPLAYED HERE-->
+</div>
+<form>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="message"  value="¿Que puedes hacer?" name="date" style=" outline:none; width:100%; height:60px; position:fixed; padding-left: 30px;padding-right: 30px; bottom:0px;" placeholder="Escribe tu mensaje ...">
+        <label class="mdl-textfield__label" for="sample3"></label>
+    </div>
+    
+	<input name="submit" type="hidden" value="Submit">
+    <button  id="btn" style="position: absolute; bottom: 12px; right: 16px;" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+        <i class="material-icons" name="submit" type="hidden" value="Submit" >send</i>
+    </button>
+	
+	<input name="camera" type="hidden" value="Submit">
+    <button  id="btncam" style="position: absolute; bottom: 12px; right: 65px;" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+        <i class="fa fa-camera" name="submit" type="hidden" value="Submit" ></i>
+    </button>
+	
+	<input name="mic" type="hidden" value="Submit">
+    <button  id="btnmic" style="position: absolute; bottom: 12px; right: 115px;" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+        <i class="fa fa-microphone" name="submit" type="hidden" value="Submit" ></i>
+    </button>
+</form>
+<span style="display: none;" id="sessionId">
+        5ca24981a0b874.89313418</span>
+
+</body>
+</html>
